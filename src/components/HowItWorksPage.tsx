@@ -147,7 +147,7 @@ export default function HowItWorksPage({ navigateTo }: HowItWorksPageProps) {
                 <ul className="space-y-2">
                   <li className="flex items-center gap-2 text-sm text-[rgba(26,26,26,0.7)]">
                     <Check className="w-4 h-4 text-blue-500" />
-                    Sell courses & content (80/20 split)
+                    Create and monetize content (80/20 split)
                   </li>
                   <li className="flex items-center gap-2 text-sm text-[rgba(26,26,26,0.7)]">
                     <Check className="w-4 h-4 text-blue-500" />

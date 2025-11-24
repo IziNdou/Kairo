@@ -57,7 +57,7 @@ export default function SignUp({ navigateTo, onSignUpComplete }: SignUpProps) {
         {/* Back Button */}
         <button
           onClick={() => navigateTo("home")}
-          className="flex items-center gap-2 text-[rgba(26,26,26,0.6)] hover:text-[#7b20b5] transition-colors mb-6"
+          className="flex items-center gap-2 text-white/80 hover:text-[#6C3FAF] transition-colors mb-6"
         >
           <ArrowLeft className="w-4 h-4" />
           Back to Home
@@ -73,7 +73,7 @@ export default function SignUp({ navigateTo, onSignUpComplete }: SignUpProps) {
             />
             <div className="space-y-2">
               <h1 className="text-white">Create Your Account</h1>
-              <p className="text-white/60">Join the South African creator economy</p>
+              <p className="text-white/90">Join the South African creator economy</p>
             </div>
           </div>
 
@@ -168,7 +168,7 @@ export default function SignUp({ navigateTo, onSignUpComplete }: SignUpProps) {
               className="w-full h-11 bg-white/5 border-white/10 hover:bg-white/10 text-white"
               onClick={() => handleSocialSignUp("Apple")}
             >
-              <svg className="w-5 h-5 mr-2" viewBox="0 0 24 24" fill="#000000">
+              <svg className="w-5 h-5 mr-2" viewBox="0 0 24 24" fill="#FFFFFF">
                 <path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z" />
               </svg>
               Sign up with Apple
@@ -177,7 +177,7 @@ export default function SignUp({ navigateTo, onSignUpComplete }: SignUpProps) {
 
           <div className="relative">
             <Separator className="bg-white/10" />
-            <span className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-black px-3 text-sm text-white/60">
+            <span className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-black px-3 text-sm text-white/90">
               Or sign up with email
             </span>
           </div>
@@ -192,7 +192,7 @@ export default function SignUp({ navigateTo, onSignUpComplete }: SignUpProps) {
                 placeholder="Enter your full name"
                 value={formData.fullName}
                 onChange={(e) => handleInputChange("fullName", e.target.value)}
-                className="h-11 bg-white/5 border-white/10 focus:border-[#6C3FAF] text-white placeholder:text-white/40"
+                className="h-11 bg-white/5 border-white/10 focus:border-[#6C3FAF] text-white placeholder:text-white/60"
                 required
               />
             </div>
@@ -205,7 +205,7 @@ export default function SignUp({ navigateTo, onSignUpComplete }: SignUpProps) {
                 placeholder="Enter your email"
                 value={formData.email}
                 onChange={(e) => handleInputChange("email", e.target.value)}
-                className="h-11 bg-white/5 border-white/10 focus:border-[#6C3FAF] text-white placeholder:text-white/40"
+                className="h-11 bg-white/5 border-white/10 focus:border-[#6C3FAF] text-white placeholder:text-white/60"
                 required
               />
             </div>
@@ -218,7 +218,7 @@ export default function SignUp({ navigateTo, onSignUpComplete }: SignUpProps) {
                 placeholder="Choose a username"
                 value={formData.username}
                 onChange={(e) => handleInputChange("username", e.target.value)}
-                className="h-11 bg-white/5 border-white/10 focus:border-[#6C3FAF] text-white placeholder:text-white/40"
+                className="h-11 bg-white/5 border-white/10 focus:border-[#6C3FAF] text-white placeholder:text-white/60"
                 required
               />
             </div>
@@ -232,13 +232,13 @@ export default function SignUp({ navigateTo, onSignUpComplete }: SignUpProps) {
                   placeholder="Create a password"
                   value={formData.password}
                   onChange={(e) => handleInputChange("password", e.target.value)}
-                  className="h-11 bg-white/5 border-white/10 focus:border-[#6C3FAF] text-white placeholder:text-white/40 pr-10"
+                  className="h-11 bg-white/5 border-white/10 focus:border-[#6C3FAF] text-white placeholder:text-white/60 pr-10"
                   required
                 />
                 <button
                   type="button"
                   onClick={() => setShowPassword(!showPassword)}
-                  className="absolute right-3 top-1/2 -translate-y-1/2 text-white/40 hover:text-white/80"
+                  className="absolute right-3 top-1/2 -translate-y-1/2 text-white/60 hover:text-white"
                 >
                   {showPassword ? <EyeOff className="w-5 h-5" /> : <Eye className="w-5 h-5" />}
                 </button>
@@ -254,13 +254,13 @@ export default function SignUp({ navigateTo, onSignUpComplete }: SignUpProps) {
                   placeholder="Confirm your password"
                   value={formData.confirmPassword}
                   onChange={(e) => handleInputChange("confirmPassword", e.target.value)}
-                  className="h-11 bg-white/5 border-white/10 focus:border-[#6C3FAF] text-white placeholder:text-white/40 pr-10"
+                  className="h-11 bg-white/5 border-white/10 focus:border-[#6C3FAF] text-white placeholder:text-white/60 pr-10"
                   required
                 />
                 <button
                   type="button"
                   onClick={() => setShowConfirmPassword(!showConfirmPassword)}
-                  className="absolute right-3 top-1/2 -translate-y-1/2 text-white/40 hover:text-white/80"
+                  className="absolute right-3 top-1/2 -translate-y-1/2 text-white/60 hover:text-white"
                 >
                   {showConfirmPassword ? <EyeOff className="w-5 h-5" /> : <Eye className="w-5 h-5" />}
                 </button>
@@ -269,19 +269,19 @@ export default function SignUp({ navigateTo, onSignUpComplete }: SignUpProps) {
 
             <Button
               type="submit"
-              className="w-full h-11 bg-[#7b20b5] hover:bg-[#6a1ca0] text-white"
+              className="w-full h-11 bg-[#6C3FAF] hover:bg-[#7d4fc0] text-white"
             >
-              Create Account
+              Next
             </Button>
           </form>
 
           {/* Sign In CTA */}
           <div className="text-center pt-4">
-            <p className="text-sm text-white/60">
+            <p className="text-sm text-white/90">
               Already have an account?{" "}
               <button
                 onClick={() => navigateTo("signin")}
-                className="text-[#6C3FAF] hover:underline"
+                className="text-[#A67395] hover:underline"
               >
                 Sign In
               </button>

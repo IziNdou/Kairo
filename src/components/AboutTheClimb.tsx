@@ -16,7 +16,7 @@ export default function AboutTheClimb({ navigateTo }: AboutTheClimbProps) {
     {
       icon: Zap,
       title: "Multiple Revenue Streams",
-      description: "Sell courses, collaborate with brands, or do both. You're in control.",
+      description: "Collaborate with brands and monetize your content. You're in control.",
     },
     {
       icon: Shield,

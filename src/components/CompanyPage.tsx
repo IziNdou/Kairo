@@ -294,11 +294,9 @@ export default function CompanyPage({ navigateTo, companyData }: CompanyPageProp
               <ul className="space-y-3">
                 {companyData.sellsContent && (
                   <>
-                    <li className="flex items-start gap-3">
-                      <Check className="w-5 h-5 text-[#7b20b5] flex-shrink-0 mt-0.5" />
-                      <span className="text-sm text-[rgba(26,26,26,0.7)]">
-                        Access to premium content and courses
-                      </span>
+                    <li className="flex items-center gap-2 text-sm text-[rgba(26,26,26,0.7)]">
+                      <Check className="w-4 h-4 text-blue-500" />
+                      Access to premium content
                     </li>
                     <li className="flex items-start gap-3">
                       <Check className="w-5 h-5 text-[#7b20b5] flex-shrink-0 mt-0.5" />

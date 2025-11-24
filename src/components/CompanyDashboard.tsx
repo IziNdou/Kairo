@@ -67,10 +67,10 @@ export default function CompanyDashboard({ navigateTo, companyData }: CompanyDas
   };
 
   const recentActivity = [
-    { type: "sale", title: "Advanced Marketing Course purchased", amount: 299, time: "2 hours ago" },
-    { type: "view", title: "Photography Masterclass viewed", views: 45, time: "5 hours ago" },
+    { type: "sale", title: "Digital Marketing Package purchased", amount: 299, time: "2 hours ago" },
+    { type: "view", title: "Photography Portfolio viewed", views: 45, time: "5 hours ago" },
     { type: "collaboration", title: "New campaign invitation from Nando's", time: "1 day ago" },
-    { type: "sale", title: "Fitness Training Pack purchased", amount: 149, time: "1 day ago" },
+    { type: "sale", title: "Brand Strategy Consultation booked", amount: 499, time: "2 days ago" },
   ];
 
   return (

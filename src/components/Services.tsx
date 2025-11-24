@@ -1,26 +1,26 @@
-import { Briefcase, Video, GraduationCap } from "lucide-react";
+import { Megaphone, Users, TrendingUp } from "lucide-react";
 import { motion } from "motion/react";
 
 export default function Services() {
   const services = [
     {
-      icon: Briefcase,
+      icon: Megaphone,
       title: "Brand Collaborations",
-      description: "Partner with top South African brands for authentic sponsored content",
+      description: "Partner with top South African brands and get paid for sponsored content",
       color: "#6C3FAF"
     },
     {
-      icon: Video,
-      title: "UGC & Clipping",
-      description: "Create user-generated content or edit clips for brands and creators",
+      icon: Users,
+      title: "Creator Marketplace",
+      description: "Connect with other creators and brands looking for authentic partnerships",
       color: "#A67395"
     },
     {
-      icon: GraduationCap,
-      title: "Course Sales",
-      description: "Host and sell your own digital products, courses, and educational content",
+      icon: TrendingUp,
+      title: "Revenue Analytics",
+      description: "Track your earnings, engagement, and growth with detailed analytics",
       color: "#8b5fbf"
-    },
+    }
   ];
 
   return (

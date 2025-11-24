@@ -3,10 +3,10 @@ import { AnimatePresence } from "motion/react";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
 import AboutTheClimb from "./components/AboutTheClimb";
+import AboutUs from "./components/AboutUs";
 import Services from "./components/Services";
 import ForCreators from "./components/ForCreators";
 import ForBrands from "./components/ForBrands";
-import ForCourseSellers from "./components/ForCourseSellers";
 import HowItWorks from "./components/HowItWorks";
 import FeaturedCreators from "./components/FeaturedCreators";
 import FinalCTA from "./components/FinalCTA";
@@ -120,12 +120,12 @@ export default function App() {
 
       {currentPage === "home" && (
         <>
+          <AboutUs />
           <Hero navigateTo={navigateTo} isAuthenticated={isAuthenticated} />
           <AboutTheClimb navigateTo={navigateTo} />
           <Services />
           <ForCreators navigateTo={navigateTo} isAuthenticated={isAuthenticated} />
           <ForBrands />
-          <ForCourseSellers />
           <HowItWorks navigateTo={navigateTo} />
           <FeaturedCreators />
           <FinalCTA navigateTo={navigateTo} isAuthenticated={isAuthenticated} />

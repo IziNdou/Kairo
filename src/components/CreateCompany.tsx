@@ -47,9 +47,8 @@ export default function CreateCompany({ navigateTo, onCompanyCreated }: CreateCo
   const [bannerPreview, setBannerPreview] = useState("");
 
   const categories = [
-    "Education & Courses",
-    "Fitness & Wellness",
     "Content Creation",
+    "Fitness & Wellness",
     "Digital Products",
     "Consulting & Coaching",
     "Technology & Software",

@@ -96,11 +96,14 @@ export default function Hero({ navigateTo, isAuthenticated }: HeroProps) {
           </motion.h1>
 
           {/* Subtext */}
-          <motion.p 
-            variants={itemVariants}
+          <motion.p
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.5, duration: 0.6 }}
             className="text-xl md:text-2xl text-[#F2F2F4]/80 mb-12 max-w-3xl mx-auto leading-relaxed"
           >
-            Sell courses, collaborate with brands, and earn from your audience — all in one place.
+            Collaborate with brands and earn from your audience — all in one place.
           </motion.p>
 
           {/* CTA Buttons */}

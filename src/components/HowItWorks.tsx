@@ -9,22 +9,19 @@ interface HowItWorksProps {
 export default function HowItWorks({ navigateTo }: HowItWorksProps) {
   const steps = [
     {
-      icon: UserPlus,
       number: "01",
       title: "Create Your Profile",
-      description: "Sign up in minutes and set up your creator profile with your niche and audience details.",
+      description: "Sign up for free and set up your creator profile to showcase your work.",
     },
     {
-      icon: Upload,
       number: "02",
-      title: "Upload Content or Apply to Campaigns",
-      description: "Sell your courses or apply to brand collaborations that match your style.",
+      title: "Apply to Brand Campaigns",
+      description: "Browse and apply to brand collaborations that match your style and audience.",
     },
     {
-      icon: DollarSign,
       number: "03",
       title: "Get Paid",
-      description: "Track your earnings in real-time and get paid securely to your bank account.",
+      description: "Complete campaigns, get paid directly, and grow your creator business.",
     },
   ];
 
@@ -91,7 +88,7 @@ export default function HowItWorks({ navigateTo }: HowItWorksProps) {
                 whileHover={{ rotate: 360, scale: 1.1 }}
                 transition={{ duration: 0.6, type: "spring" }}
               >
-                <step.icon className="w-8 h-8 text-[#F2F2F4]" />
+                <UserPlus className="w-8 h-8 text-[#F2F2F4]" />
               </motion.div>
 
               <h3 className="text-2xl text-[#F2F2F4] mb-3 relative z-10">{step.title}</h3>
