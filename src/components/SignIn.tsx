@@ -5,7 +5,6 @@ import { Input } from "./ui/input";
 import { Label } from "./ui/label";
 import { Button } from "./ui/button";
 import { Separator } from "./ui/separator";
-import kairoLogo from "figma:asset/035a2d6638b6203d9a9cf60b4103d1195cb5d299.png";
 
 interface SignInProps {
   navigateTo: (page: Page) => void;
@@ -48,7 +47,7 @@ export default function SignIn({ navigateTo, onSignInComplete }: SignInProps) {
           {/* Header */}
           <div className="text-center space-y-4">
             <img 
-              src={kairoLogo} 
+              src="./src/assets/full-logo.jpeg"
               alt="Kairo" 
               className="w-[180px] h-auto mx-auto object-contain"
             />

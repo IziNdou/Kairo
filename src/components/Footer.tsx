@@ -1,5 +1,3 @@
-import kairoLogo from "figma:asset/035a2d6638b6203d9a9cf60b4103d1195cb5d299.png";
-
 export default function Footer() {
   return (
     <footer className="bg-[#0F0F1A] text-[#F2F2F4]">
@@ -9,7 +7,7 @@ export default function Footer() {
           {/* Brand */}
           <div>
             <img 
-              src={kairoLogo} 
+              src="./src/assets/full-logo.jpeg"
               alt="Kairo" 
               className="w-[200px] h-auto mb-4 mx-auto object-contain"
             />

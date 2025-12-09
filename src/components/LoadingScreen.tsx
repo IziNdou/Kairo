@@ -1,5 +1,4 @@
 import { motion } from "motion/react";
-import kairoIcon from "figma:asset/a9f1318dcc71fe801db7bfd032012dc40c00be6d.png";
 
 export default function LoadingScreen() {
   return (
@@ -31,7 +30,7 @@ export default function LoadingScreen() {
         {/* Dark base layer - logo starts invisible */}
         <div className="absolute inset-0 flex items-center justify-center">
           <img
-            src={kairoIcon}
+            src="./src/assets/logo.jpeg"
             alt="Kairo"
             className="w-24 h-24 opacity-10"
           />
@@ -58,7 +57,7 @@ export default function LoadingScreen() {
           }}
         >
           <img
-            src={kairoIcon}
+            src="./src/assets/logo.jpeg"
             alt="Kairo"
             className="w-24 h-24 drop-shadow-[0_0_20px_rgba(108,63,175,0.8)]"
           />
