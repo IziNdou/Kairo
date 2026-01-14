@@ -2,7 +2,6 @@ import { Page } from "../App";
 import { Avatar, AvatarFallback, AvatarImage } from "./ui/avatar";
 import { PlusCircle } from "lucide-react";
 import { motion } from "motion/react";
-import kairoLogo from "figma:asset/035a2d6638b6203d9a9cf60b4103d1195cb5d299.png";
 
 interface HeaderProps {
   navigateTo: (page: Page) => void;
@@ -40,7 +39,7 @@ export default function Header({ navigateTo, currentPage, isAuthenticated, userD
             transition={{ type: "spring", stiffness: 400, damping: 10 }}
           >
             <img 
-              src={kairoLogo} 
+              src="../assets/035a2d6638b6203d9a9cf60b4103d1195cb5d299.png" 
               alt="Kairo" 
               className="w-[250px] h-[150px] object-contain"
             />
